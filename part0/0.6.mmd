@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: form details get sent via POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    Note right of browser: Application is not refreshed due because this is a single page app.
+    Note right of browser: Application pushes the note to the screen, sets the note form box to empty and sends the note to the server.
+    Note right of browser: No further HTML request required.
