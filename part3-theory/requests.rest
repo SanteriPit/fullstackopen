@@ -1,0 +1,21 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+  "content": "Ensure that everything still works",
+  "important": true
+}
+
+###
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+  "content": "lol",
+  "important": true
+}
+
+###
+
+DELETE http://localhost:3001/api/notes/6a4a9cb980a7d97eba11b5af
